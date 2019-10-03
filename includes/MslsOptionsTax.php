@@ -135,7 +135,7 @@ class MslsOptionsTax extends MslsOptions {
 			}
 		}
 
-		return '';
+		return apply_filters( 'check_url', get_term_link( $term_id ), $this );
 	}
 
 }
